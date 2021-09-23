@@ -9,9 +9,9 @@
 <div id="myApp">
     <h2>Quotes</h2>
     <ul>
-        <li v-for="quote in quotes">
-            <h3>{{quote.quote}}</h3>
-            <cite>{{quote.author}}</cite>
+        <li v-for="({quote, author} = quote, index) in quotes">
+            <h3>{{index}} - {{quote}}</h3>
+            <cite>{{author}}</cite>
         </li>
     </ul>
 </div>
