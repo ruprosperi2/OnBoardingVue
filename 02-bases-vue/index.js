@@ -11,15 +11,19 @@ const app = Vue.createApp({
             },
             isArrays: [1,2,3]
         }
+    },
+    methods:{
+        changeMessage(){
+            this.message = "Hola humanos"
+            this.capitalize()
+        },
+        capitalize(){
+            this.message = this.message.toUpperCase()
+        },
+        power(){
+            this.numbers = this.numbers * this.numbers
+        }
     }
 })
 
 app.mount('#myApp')
-
-// <h1>Hello World</h1>
-// <h2>String: {{"Hello World"}}</h2>
-// <h2>Number: {{1+1}}</h2>
-// <h2>Concat: {{"1"+"1"}}</h2>
-// <h2>Boolean: {{true}}</h2>
-// <h2>Object: {{ {name: "ruben", age:25 } }}</h2>
-// <h2>Array: {{ [1,2,3,4] }}</h2>
