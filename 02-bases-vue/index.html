@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
 <div id="myApp">
-
+    <h1>Hello World</h1>
+    <h2>String: {{"Hello World"}}</h2>
+    <h2>Number: {{1+1}}</h2>
+    <h2>Concat: {{"1"+"1"}}</h2>
+    <h2>Boolean: {{true}}</h2>
+    <h2>Object: {{ {name: "ruben", age:25 } }}</h2>
+    <h2>Array: {{ [1,2,3,4] }}</h2>
 </div>
 
-<script src="https://unpkg.com/vue@next"></script>
+
 <script src="index.js"></script>
 </body>
 </html>
