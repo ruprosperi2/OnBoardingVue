@@ -7,15 +7,13 @@
 </head>
 <body>
 <div id="myApp">
-    <h1>My app</h1>
-    <h2>String: {{message}}</h2>
-    <h2>Number: {{numbers}}</h2>
-    <h2>Concat: {{contact}}</h2>
-    <h2>Boolean: {{isBolean}}</h2>
-    <h2>Object: {{ isObject }}</h2>
-    <h2>Array: {{ isArrays }}</h2>
-    <button @click="changeMessage">Change message</button>
-    <button @click="power">Power</button>
+    <h2>Quotes</h2>
+    <ul>
+        <li v-for="quote in quotes">
+            <h3>{{quote.quote}}</h3>
+            <cite>{{quote.author}}</cite>
+        </li>
+    </ul>
 </div>
 
 
