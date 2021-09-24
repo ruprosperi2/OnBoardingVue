@@ -7,7 +7,12 @@
 </head>
 <body>
 <div id="myApp">
-    <h2>Quotes</h2>
+    <h2>Quotes: <small>{{newQuote}}</small> </h2>
+    <input
+            type="text"
+            v-model="newQuote"
+            @keypress.enter="changeQuote"
+    >
     <ul>
         <li v-for="({quote, author} = quote, index) in quotes">
             <h3>{{index}} - {{quote}}</h3>
